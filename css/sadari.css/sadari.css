@@ -1,0 +1,96 @@
+
+body { font-family:tahoma,arial,sans-serif,verdana;	font-size:12px; color:#333; line-height:1.35em; background:#000; }
+
+input { height:24px; font-family:tahoma,ë‹ì›€,dotum,arial,sans-serif,verdana; font-size:12px; font-weight:bold; color:#333; text-align:center; text-shadow:1px 1px 0 #FFF; vertical-align:middle; line-height:1.35em; padding-right:1px; border:1px solid; border-color:#999 #777 #777 #999; border-radius:2px; -moz-border-radius:2px; background:#FFF -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#EEE)); background:#FFF -moz-linear-gradient(top, #FFF, #EEE); outline:none; -webkit-appearance:none; }
+input:focus { border-color:#777 #999 #999 #777; background:#FFF; background:#FFF -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#FFF)); background:#FFF -moz-linear-gradient(top, #EEE, #FFF); box-shadow:0 0 3px #CCC; }
+
+button { height:20px; font-family:tahoma,arial,sans-serif,verdana; font-size:11px; color:#333; text-align:center; text-transform:uppercase; text-shadow:1px 1px 0 #FFF; vertical-align:middle; line-height:1.35em; margin-left:-2px; border:1px solid; border-color:#AAA #888 #888 #AAA; border-radius:2px; -moz-border-radius:2px; background:#FFF; background:#FFF -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#CCC)); background:#FFF -moz-linear-gradient(top, #FFF, #CCC); cursor:pointer; }
+button:hover { background:#FFF -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#DDD)); background:#FFF -moz-linear-gradient(top, #FFF, #DDD); box-shadow:0 0 3px #CCC; }
+button:active { border-color:#888 #AAA #AAA #888; background:#FFF -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DDD), to(#FFF)); background:#FFF -moz-linear-gradient(top, #DDD #FFF); }
+
+#zone { position:absolute; left:50%; top:52%; width:0; height:0; border-radius:5px; background:url('../images/슬라이드 이미지.jpg'); background-repeat: no-repeat; background-size: 100% 100%; overflow:hidden; }
+
+#zone h1 { font-size:20px; font-style:italic; color:#000; letter-spacing:-0.1em; text-transform:uppercase; text-shadow:1px 1px 0 #FFF; line-height:1.1em; padding:2px 6px 4px; border-bottom:1px solid #000; border-radius:5px 5px 0 0; background:#E9E9E9; }
+
+#zone #footer { position:absolute; left:0; bottom:0; width:100%; border-top:1px solid #000; border-radius:0 0 5px 5px; background:url('../images/슬라이드 이미지.jpg'); background-repeat: no-repeat; background-size: 100% 100%; }
+#zone #footer p { font-size:10px; color:#777; line-height:1.2em; padding:2px 5px 4px;}
+#zone #footer p a { font-weight:bold; color:#000; }
+
+#zone div.util { position:absolute; right:4px; top:4px; text-align:right; white-space:nowrap; overflow:hidden; }
+
+#zone div.util em.checkbox { position:relative; top:1px; font-size:11px; font-style:normal; color:#454545; line-height:1.35em; text-shadow:1px 1px 0 #FFF; margin-right:5px; cursor:pointer; }
+#zone div.util em.checkbox span { width:6px; height:6px; text-shadow:none; vertical-align:middle; margin-right:1px; margin-top:-2px; padding:2px; display:inline-block; border:1px solid #555; overflow:hidden; }
+#zone div.util em.checkbox span:after { content:' '; width:6px; height:6px; display:inline-block; background:transparent; overflow:hidden; }
+#zone div.util em.checkbox:hover { color:#222; }
+#zone div.util em.checkbox:hover span { border-color:#222; background:#FFF; }
+#zone div.util em.checkbox:active { top:2px; }
+#zone div.util em.checkbox.on span:after { background:#000; }
+
+#zone div.util input { width:23px; height:18px; font-weight:bold; font-size:11px; }
+#zone div.util input:focus { border-color:#999 #777 #777 #999; border-radius:2px; -moz-border-radius:2px; background:#FFF -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#EEE)); background:#FFF -moz-linear-gradient(top, #FFF, #EEE); }
+#zone div.util button { width:45px; }
+#zone div.util button#btngoall { width:56px; font-weight:bold; color:#EEE; text-shadow:-1px -1px 0 #000; margin-right:-57px; border-color:#000; background:#777; background:#777 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#777), to(#000)); background:#777 -moz-linear-gradient(top, #777, #000); }
+#zone div.util button#btngoall:hover { color:#FFF; background:#888; background:#888 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#888), to(#111)); background:#888 -moz-linear-gradient(top, #888, #111); }
+#zone div.util button#btngoall:active { color:#FFF; text-shadow:1px 1px 0 #000; background:#000; background:#000 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), to(#777)); background:#000 -moz-linear-gradient(top, #000, #777); }
+#zone div.util span.updown { position:relative; width:15px; height:18px; vertical-align:middle; line-height:1.35em; margin-left:-2px; border:1px solid; border-color:#AAA #888 #888 #AAA; border-radius:2px; -moz-border-radius:2px; background:#FFF -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#EEE)); background:#FFF -moz-linear-gradient(top, #FFF, #EEE); display:inline-block; cursor:pointer; overflow:hidden; }
+#zone div.util span.updown:hover { background:#FFF -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#FFF)); background:#FFF -moz-linear-gradient(top, #EEE, #FFF); box-shadow:0 0 3px #CCC; }
+#zone div.util span.updown em { width:13px; height:6px; text-align:center; padding:3px 2px 0 0; display:block; }
+#zone div.util span.updown em:active { position:relative; }
+#zone div.util span.updown em#btnup:active { top:-1px; }
+#zone div.util span.updown em#btndown:active { top:1px; }
+#zone div.util span.updown em span { width:0; height:0; border-style:solid; border-width:0 3px 3px; border-color:transparent transparent #AAA transparent; overflow:hidden; display:inline-block; }
+#zone div.util span.updown em#btnup:hover span { border-bottom-color:#000; }
+#zone div.util span.updown em#btndown { height:7px; padding-top:2px; }
+#zone div.util span.updown em#btndown span { margin-top:1px; border-width:3px 3px 0; border-color:#AAA transparent transparent transparent; }
+#zone div.util span.updown em#btndown:hover span { border-top-color:#000; }
+
+#zone.mobile div.util span.updown { width:46px; line-height:0;}
+#zone.mobile div.util span.updown em { position:absolute; left:0; top:0; width:20px; height:18px; text-align:center; padding:0 1px 0 1px; border-right:1px solid #DDD; }
+#zone.mobile div.util span.updown em span { vertical-align:top; border-width:7px 5px 5px; }
+#zone.mobile div.util span.updown em#btndown { left:23px; height:12px; padding:7px 2px 0 0; border-right:0; border-left:1px solid #FFF; }
+#zone.mobile div.util span.updown em#btndown span { margin-top:0; border-width:5px 5px 6px; }
+
+#zone ul { position:relative; overflow:hidden; background:url('../images/슬라이드 이미지.jpg'); background-repeat: no-repeat; background-size: 100% 100%;}
+#zone ul li { position:absolute; left:100%; top:0; height:100%; text-align:center; }
+#zone ul li.linedbox { display:none; z-index:1; }
+
+#zone h1 {background:url('../images/슬라이드 이미지.jpg'); background-repeat: no-repeat; background-size: 100% 100%;}
+
+#zone ul li p.input { position:absolute; left:0; width:100%; }
+#zone ul li p.input input { width:80%; min-width:30px; max-width:150px; }
+#zone ul li p.input input.added, #zone ul li p.input input.disabled { border-style:dashed; border-color:transparent transparent #888 transparent; border-radius:0; background:none; }
+#zone:not([class=mobile]) ul li p.input input.added:hover,
+#zone ul li p.input input.added:focus { border-style:solid; border-color:#888 #AAA #AAA #888; border-radius:2px; background:#FFF; background:#FFF -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#FFF)); background:#FFF -moz-linear-gradient(top, #EEE, #FFF); box-shadow:0 0 3px #CCC; }
+#zone ul li p.player { top:10px; }
+#zone ul li p.result { bottom:10px; }
+
+#zone ul li div.wrapper { position:absolute; left:0; top:46px; width:100%; height:0; }
+#zone ul li div.wrapper div.vline { position:absolute; left:50%; top:0; width:4px; height:100%; margin-left:-2px; background:#000; }
+#zone ul li div.wrapper div.hline { position:absolute; left:50%; top:0; width:100%; height:4px; margin-top:-2px; background:#000; }
+#zone ul li div.wrapper div.vlined { position:absolute; left:50%; top:0; width:8px; margin:-4px 0 0 -4px; padding:4px 0; border-radius:4px; z-index:3; background:#FFF; }
+#zone ul li div.wrapper div.hlined { position:absolute; left:50%; top:0; height:8px; margin-top:-4px; z-index:3; }
+
+#zone ul li div.resultbox { position:absolute; top:42px; width:100%; height:50px; z-index:3; display:none; opacity:0; pointer-events:none; }
+#zone ul li div.resultbox div { position:absolute; left:50%; top:-7px; width:2px; height:6px; margin-left:-1px; background:#000; z-index:1; opacity:0.75; }
+#zone ul li div.resultbox p { width:80%; min-width:30px; max-width:150px; height:24px; font-weight:bold; color:#000; text-shadow:1px 1px 0 #FFF; margin:0 auto; height:auto; margin-top:-2px; padding:3px 0 4px; border-width:1px 1px 0; border-style:solid; border-color:#FFF transparent; border-radius:2px; background:#fff; background:#FFF -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCC), to(#FFF)); background:#FFF -moz-linear-gradient(top, #CCC #FFF); opacity:0.85; box-shadow:0 2px 3px rgba(0, 0, 0, 0.3); }
+
+#zone ul li p.startbtn { position:absolute; left:50%; top:46px; width:22px; height:22px; margin-left:-13px; border:0 solid #FFF; border-radius:13px; box-shadow:0 0 5px rgba(0, 0, 0, 0.5); cursor:pointer; overflow:hidden; z-index:4; }
+#zone ul li p.startbtn.hiding { box-shadow:none; cursor:default; }
+#zone ul li p.startbtn { width:0px; height:0; margin-left:-2px; }
+#zone ul li p.startbtn span { position:absolute; left:50%; top:50%; width:50px; height:50px; font-size:9px; font-weight:bold; color:#FFF; text-shadow:0 0 4px rgba(0, 0, 0, 0.75); line-height:1em; text-transform:lowercase; text-align:center; margin:-25px 0 0 -25px; padding-top:18px; }
+
+#zone p.bigbutton { position:absolute; left:50%; top:50%; width:100px; height:63px; font-size:22px; font-weight:bold; color:#FFF; text-shadow:0 0 5px rgba(255, 255, 255, 0.5); line-height:1em; text-transform:uppercase; text-align:center; margin:-50px 0 0 -50px; padding-top:37px; border-radius:50px; background:#000; z-index:10; box-shadow:0 0 10px rgba(0, 0, 0, 0.5); cursor:pointer; opacity:0; display:none; z-index:5; }
+
+#zone div.suggest { position:absolute; left:0; top:0;  width:118px; height:200px; border-style:solid; border-width:0 1px 1px 1px; border-color:#888 #AAA #AAA #888; background:#FFF; background:#FFF -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#DDD)); background:#FFF -moz-linear-gradient(top, #FFF, #DDD); box-shadow:0 2px 3px rgba(0,0,0,0.15); display:none; overflow:auto; z-index:4; }
+#zone div.suggest.lower { border-width:1px 1px 0 1px; background:#FFF -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#EEE)); background:#FFF -moz-linear-gradient(top, #FFF, #EEE); box-shadow:0 -2px 3px rgba(0,0,0,0.15); }
+#zone div.suggest ol li { position:relative; height:18px; font-size:11px; line-height:1.45em; white-space:nowrap; padding:2px 5px 0; cursor:pointer; overflow:hidden; }
+#zone div.suggest ol li.on { color:#FFF; background:#333; }
+#zone div.suggest ol li span { display:none; }
+#zone div.suggest ol li.on span { position:absolute; right:0; top:0; height:18px; font-family:verdana; font-size:12px; color:#BBB; padding:2px 3px 0; background:#555; display:block; }
+#zone div.suggest ol li.on span:hover { color:#FFF; }
+
+.scroll-y-content { padding-right:5px; }
+div.scroll-y-track { right:0; top:0; width:5px; background:#FFF; }
+div.scroll-y-track div.scroll-y-bar { left:0; width:5px; height:0; background:#222; }
+div.scroll-y-track div.scroll-y-arrow-up,
+div.scroll-y-track div.scroll-y-arrow-down { display:none; }

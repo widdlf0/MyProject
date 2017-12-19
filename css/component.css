@@ -1,0 +1,104 @@
+.grid .img-style {
+	margin: 0;
+	position: relative;
+}
+
+.grid .img-style img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+	
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	background: #2c3f52;
+	color: #ed4e6e;
+}
+
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.grid figcaption .span-tag1:before {
+	content: 'by ';
+}
+
+.grid figcaption .span-tag2{
+	position: relative;
+	top:-15px;
+	float:right;
+	font-size: 30px;
+}
+
+.grid figcaption .span-tag3{
+	position: relative;
+	top:5px;
+	float:right;
+	font-size: 25px;
+}
+
+.grid figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #ed4e6e;
+	color: #fff;
+}
+
+/* Individual Caption Styles */
+
+/* Caption Style 3 */
+.cs-style-3 .img-style {
+	overflow: hidden;
+}
+
+.cs-style-3 .img-style img {
+	-webkit-transition: -webkit-transform 0.1s;
+	-moz-transition: -moz-transform 0.1s;
+	transition: transform 0.1s;
+}
+
+.no-touch .cs-style-3 .img-style:hover img,
+.cs-style-3 .img-style.cs-hover img {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	-ms-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+
+.cs-style-3 figcaption {
+	height: 70px;
+	width: 100%;
+/* 	top: auto; */
+	bottom: 0;
+	opacity: 0;
+	-webkit-transform: translateY(200%);
+	-moz-transform: translateY(200%);
+	-ms-transform: translateY(200%);
+	transform: translateY(200%);
+/* 	-webkit-backface-visibility: hidden; */
+/* 	-moz-backface-visibility: hidden; */
+/* 	backface-visibility: hidden; */
+	-webkit-transition: -webkit-transform 0.1s, opacity 0.025s 0.075s;
+	-moz-transition: -moz-transform 0.1s, opacity 0.025s 0.075s;
+	transition: transform 0.1s, opacity 0.025s 0.075s;
+}
+
+.no-touch .cs-style-3 .img-style:hover figcaption,
+.cs-style-3 .img-style.cs-hover figcaption {
+	opacity: 1;
+	-webkit-transform: translateY(190%);
+	-moz-transform: translateY(190%);
+	-ms-transform: translateY(190%);
+	transform: translateY(190%);
+	-webkit-transition: -webkit-transform 0.1s, opacity 0.025s;
+	-moz-transition: -moz-transform 0.1s, opacity 0.025s;
+	transition: transform 0.1s, opacity 0.025s;
+}
